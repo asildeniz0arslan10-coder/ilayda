@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>İlayda ❤️</title>
+<title>İlayda & Aşil ❤️</title>
 
 <style>
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial, sans-serif;
+font-family:Arial,sans-serif;
 }
 
 body{
@@ -22,7 +22,10 @@ overflow:hidden;
 position:fixed;
 width:100%;
 height:100%;
-background:url('fotograf.jpg') center center/cover no-repeat;
+background-image:url('./fotograf.jpg');
+background-position:center;
+background-size:cover;
+background-repeat:no-repeat;
 filter:brightness(0.35);
 z-index:-2;
 }
@@ -31,7 +34,7 @@ z-index:-2;
 position:fixed;
 width:100%;
 height:100%;
-background:rgba(0,0,0,0.2);
+background:rgba(0,0,0,0.25);
 z-index:-1;
 }
 
@@ -44,25 +47,31 @@ padding:20px;
 }
 
 .card{
-max-width:700px;
+max-width:750px;
 background:rgba(255,255,255,0.12);
-backdrop-filter:blur(12px);
-padding:35px;
+backdrop-filter:blur(15px);
+padding:40px;
 border-radius:25px;
 text-align:center;
 color:white;
-box-shadow:0 0 30px rgba(0,0,0,0.3);
+box-shadow:0 0 40px rgba(0,0,0,0.35);
+}
+
+.small{
+font-size:14px;
+opacity:.8;
+margin-bottom:15px;
 }
 
 h1{
-font-size:42px;
+font-size:46px;
 margin-bottom:20px;
 }
 
 p{
 font-size:20px;
 line-height:1.8;
-margin-bottom:15px;
+margin-bottom:18px;
 }
 
 button{
@@ -75,15 +84,15 @@ background:white;
 color:#ff4d88;
 font-weight:bold;
 margin-top:15px;
+transition:0.3s;
 }
 
 button:hover{
-transform:scale(1.05);
+transform:scale(1.08);
 }
 
 .heart{
 position:absolute;
-color:#ff7aa8;
 font-size:25px;
 animation:fall linear infinite;
 }
@@ -109,7 +118,11 @@ opacity:0;
 <div class="container">
 <div class="card">
 
-<h1>İlayda ❤️</h1>
+<p class="small">
+Bu sayfa sadece senin için hazırlandı ❤️
+</p>
+
+<h1>İlayda & Aşil ❤️</h1>
 
 <p>
 Bu sayfayı sana tek bir şey söylemek için hazırladım.
@@ -137,7 +150,8 @@ Seni kaybetmek istemiyorum.
 </p>
 
 <p>
-<b>Seni Seviyorum ❤️</b><br>
+<b>Seni Çok Seviyorum ❤️</b>
+<br><br>
 — Aşil
 </p>
 
@@ -150,10 +164,10 @@ Seni kaybetmek istemiyorum.
 
 <script>
 function affet(){
-alert("Teşekkür ederim ❤️ Sana layık olmak için elimden geleni yapacağım. - Aşil");
+alert("❤️ Teşekkür ederim İlayda. Seni mutlu etmek ve bir daha üzmemek için elimden geleni yapacağım. ❤️ - Aşil");
 }
 
-for(let i=0;i<40;i++){
+for(let i=0;i<50;i++){
 let h=document.createElement("div");
 h.className="heart";
 h.innerHTML="❤️";
