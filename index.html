@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>İlayda ❤️</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+height:100vh;
+overflow:hidden;
+}
+
+.bg{
+position:fixed;
+width:100%;
+height:100%;
+background:url('fotograf.jpg') center center/cover no-repeat;
+filter:brightness(0.35);
+z-index:-2;
+}
+
+.overlay{
+position:fixed;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.2);
+z-index:-1;
+}
+
+.container{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:20px;
+}
+
+.card{
+max-width:700px;
+background:rgba(255,255,255,0.12);
+backdrop-filter:blur(12px);
+padding:35px;
+border-radius:25px;
+text-align:center;
+color:white;
+box-shadow:0 0 30px rgba(0,0,0,0.3);
+}
+
+h1{
+font-size:42px;
+margin-bottom:20px;
+}
+
+p{
+font-size:20px;
+line-height:1.8;
+margin-bottom:15px;
+}
+
+button{
+padding:15px 35px;
+border:none;
+border-radius:15px;
+font-size:18px;
+cursor:pointer;
+background:white;
+color:#ff4d88;
+font-weight:bold;
+margin-top:15px;
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
+.heart{
+position:absolute;
+color:#ff7aa8;
+font-size:25px;
+animation:fall linear infinite;
+}
+
+@keyframes fall{
+0%{
+transform:translateY(-100px);
+opacity:1;
+}
+100%{
+transform:translateY(110vh);
+opacity:0;
+}
+}
+</style>
+</head>
+
+<body>
+
+<div class="bg"></div>
+<div class="overlay"></div>
+
+<div class="container">
+<div class="card">
+
+<h1>İlayda ❤️</h1>
+
+<p>
+Bu sayfayı sana tek bir şey söylemek için hazırladım.
+</p>
+
+<p>
+Biliyorum, seni kırdım.
+Belki seni üzdüm, belki de hak ettiğinden daha az değer verdiğimi düşündürdüm.
+Ama inan bana, seni üzmek istediğim için değil...
+Hata yaptığım için oldu.
+</p>
+
+<p>
+Sen benim için sıradan biri değilsin.
+Bu fotoğrafa baktığımda aklıma kavga değil,
+beraber güldüğümüz güzel anılar geliyor.
+</p>
+
+<p>
+Hatamı kabul ediyorum ve içtenlikle özür diliyorum.
+</p>
+
+<p>
+Seni kaybetmek istemiyorum.
+</p>
+
+<p>
+<b>Seni Seviyorum ❤️</b><br>
+— Aşil
+</p>
+
+<button onclick="affet()">
+İlayda, beni affeder misin? ❤️
+</button>
+
+</div>
+</div>
+
+<script>
+function affet(){
+alert("Teşekkür ederim ❤️ Sana layık olmak için elimden geleni yapacağım. - Aşil");
+}
+
+for(let i=0;i<40;i++){
+let h=document.createElement("div");
+h.className="heart";
+h.innerHTML="❤️";
+h.style.left=Math.random()*100+"%";
+h.style.animationDuration=(Math.random()*6+4)+"s";
+h.style.fontSize=(Math.random()*20+15)+"px";
+document.body.appendChild(h);
+}
+</script>
+
+</body>
+</html>
